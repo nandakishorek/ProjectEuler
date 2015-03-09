@@ -20,6 +20,18 @@ public class Problem9 {
 	 */
 	public static void main(String[] args) {
 		
+		// a simple brute force solution
+		for(int i=998;i>2;--i){
+			for(int j=i-1;j>0;--j){
+				for(int k=j-1;k>0;--k){
+					if((i + j + k ) == 1000){
+						if( i*i == j*j + k*k){
+							System.out.println("i: " +i + " j: " +j + " k: " + k);
+							System.out.println("i*j*k " + (i*j*k));
+						}
+					}
+				}
+			}
+		}
 	}
-
 }
