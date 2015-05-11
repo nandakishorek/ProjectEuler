@@ -39,7 +39,6 @@ public class Problem20 {
         for (int i = 1; i <= 100; ++i) {
             int carry = 0;
             for (int j = 0; j < result.length; ++j) {
-                // multiply each digit by BASE and find the product
                 int product = 0;
                 if (result[j] != DELIMITER) {
                     product = result[j] * i;
